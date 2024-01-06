@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
+  .nav-item-container {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  li {
+    list-style-type: none;
+  }
+  .show-links {
+  display: none;
+}
+}
